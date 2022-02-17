@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.14.21",
+    "prettier": "^2.5.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "private": true,
+  "scripts": {
+    "build": "esbuild --bundle index.ts --outfile=index.js --sourcemap",
+    "watch": "esbuild --bundle index.ts --outfile=index.js --sourcemap --watch"
+  }
+}
